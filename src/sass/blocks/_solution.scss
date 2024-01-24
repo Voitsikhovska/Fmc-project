@@ -1,0 +1,86 @@
+.solution {
+  position: relative;
+  min-height: 900px;
+
+  background: url("../../img/bg_2.png") no-repeat 50% / cover;
+  padding: 85px 0px 90px 0px;
+  &_title {
+    position: relative;
+    margin: 0 auto;
+    color: $text-color;
+    text-align: center;
+    width: 600px;
+  }
+  &_list {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 15px 0px 15px;
+    margin: 25px auto;
+    list-style-type: none;
+    width: 850px;
+    border: 2px solid white;
+    border-radius: 5px;
+  }
+
+  &_link {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 300;
+    &:hover {
+      text-decoration: none;
+      color: $btn-color;
+    }
+  }
+
+  &_items {
+    text-decoration: none;
+    border-right: 1px solid white;
+
+    padding-right: 15px;
+    text-align: center;
+    height: 30px;
+  }
+  hr {
+    position: relative;
+    height: 50px;
+    top: -15px;
+    opacity: 0.5;
+  }
+}
+.carousel {
+  padding: 20px 0;
+  &_inner {
+    position: relative;
+    width: 950px;
+    margin: 0 auto;
+    img {
+      width: 950px;
+    }
+  }
+
+  .slick-prev,
+  .slick-next {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    left: -66px;
+    border: none;
+
+    img {
+      width: 25px;
+      height: 60px;
+    }
+  }
+
+  .slick-next {
+    right: -66px;
+    left: auto;
+  }
+}
+.slick-prev:before {
+  content: "";
+}
+.slick-next:before {
+  content: "";
+}
