@@ -1,0 +1,66 @@
+.options {
+  min-height: 600px;
+  margin-top: 80px;
+  padding: 90px 0px 0px 0px;
+  background: url("../../img/bg_3.png") center (center / cover) no-repeat;
+  &_title {
+    position: relative;
+    margin: 0 auto;
+    color: $text-color;
+    text-align: center;
+    width: 370px;
+  }
+  &_wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+  &_item {
+    display: flex;
+    flex-direction: column;
+
+    min-width: 255px;
+    height: 170px;
+    color: $text-color;
+    margin: 130px 0px;
+    z-index: 2;
+  }
+
+  &_subtitle {
+    z-index: 10;
+
+    &_one {
+      text-align: end;
+    }
+    &_two {
+      text-align: start;
+    }
+  }
+  &_descr {
+    opacity: 0.5;
+    font-weight: 300;
+    width: 400px;
+  }
+  &-square-one {
+    position: relative;
+    padding: 0;
+    @include before_square;
+    &:before {
+      display: none;
+    }
+    &:after {
+      top: -130px;
+    }
+  }
+  &-square-two {
+    position: relative;
+    padding: 0;
+    @include before_square;
+    &:before {
+      top: -130px;
+    }
+    &:after {
+      display: none;
+    }
+  }
+}

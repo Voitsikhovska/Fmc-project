@@ -1,0 +1,24 @@
+@mixin before-square {
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    opacity: 0.2;
+    right: 70%;
+    width: 170px;
+    height: 170px;
+
+    background: $btn-color;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    opacity: 0.2;
+    left: 70%;
+    width: 170px;
+    height: 170px;
+
+    background: $btn-color;
+  }
+}
