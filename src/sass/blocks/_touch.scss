@@ -1,0 +1,19 @@
+.touch {
+  margin-top: 80px;
+  &_descr {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 320px;
+    min-height: 320px;
+  }
+  &_title {
+    margin-top: 75px;
+    text-align: center;
+  }
+}
+.lines {
+  background: url("../../img/border.png") no-repeat;
+  height: 320px;
+  padding: 100px 20px;
+}
