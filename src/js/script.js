@@ -9,7 +9,6 @@ $(document).ready(function () {
       '<button type="button" class="slick-next"><img src="../icons/right.png" /></button>',
     responsive: [
       {
-        breakpoint: 992,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
