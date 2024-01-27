@@ -139,11 +139,7 @@
       align-items: center;
       margin: 0 auto;
     }
-    &_items {
-      img {
-        width: 325px;
-      }
-    }
+
     &_descr {
       h3 {
         transform: translate(75%, -50%);
@@ -292,5 +288,96 @@
   .container {
     width: 100%;
     padding: 0 10px;
+  }
+  .menu {
+    display: none;
+  }
+  nav {
+    display: none;
+  }
+  header {
+    display: none;
+  }
+  .promo {
+    margin: 0;
+    &__title {
+      font-size: 15px;
+      width: 200px;
+    }
+    &__subtitle {
+      width: 200px;
+      font-size: 13px;
+    }
+  }
+  .solution {
+    &_title {
+      width: 200px;
+    }
+  }
+  .carousel {
+    display: none;
+  }
+  .benefits {
+    &_title {
+      width: 200px;
+    }
+    &_descr {
+      h3 {
+        transform: translate(0%, -50%);
+      }
+    }
+    &_item {
+      img {
+        width: 300px;
+      }
+      margin-bottom: 10px;
+    }
+  }
+
+  .options {
+    &_title {
+      width: 200px;
+    }
+    &_wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+    &_item {
+      position: relative;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    &_descr {
+      width: 200px;
+    }
+    &_subtitle {
+      &_one {
+        margin-bottom: 10px;
+        text-align: center;
+        transform: translate(40%, 30%);
+      }
+    }
+    &-square-one {
+      display: none;
+    }
+    &-square-two {
+      display: none;
+    }
+    .end {
+      left: 15px;
+    }
+  }
+  .contacts {
+    &_wrapper {
+      flex-direction: column;
+      align-items: flex-start;
+
+      margin: 0 auto;
+      &_items {
+        display: flex;
+        margin: 0 auto;
+        text-align: center;
+      }
+    }
   }
 }
