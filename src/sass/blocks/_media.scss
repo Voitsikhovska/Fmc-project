@@ -1,7 +1,4 @@
 @media (max-width: 1440px) {
-  .menu {
-    display: none;
-  }
 }
 @media (max-width: 1200px) {
   .container {
@@ -24,7 +21,7 @@
   .promo {
     padding: 60px 0px;
     &_logo {
-      top: 150px;
+      top: 50px;
     }
     &_lists {
       position: relative;
@@ -71,8 +68,59 @@
   .container {
     max-width: 720px;
   }
-}
+  .promo {
+    padding: 60px 0px;
+    &_logo {
+      top: 40px;
+    }
+  }
+  .access {
+    margin-top: 20px;
+    min-height: 473px;
+    padding: 20px 0 65px 0;
+    &_wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &_items {
+      margin: 15px;
+    }
+  }
+  .solution {
+    &_list {
+      display: flex;
+      flex-direction: column;
+      width: 250px;
+      align-items: center;
+      padding: 20px;
+    }
+    hr {
+      position: relative;
+      transform: rotate(90deg);
+      height: 50px;
+      top: -0px;
+      opacity: 0.5;
+    }
+  }
+  .carousel {
+    &_inner {
+      width: 450px;
 
+      img {
+        width: 450px;
+      }
+    }
+    .slick-prev,
+    .slick-next {
+      top: 50%;
+      img {
+        width: 20px;
+        height: 50px;
+      }
+    }
+  }
+}
 @media (max-width: 768px) {
   .container {
     max-width: 540px;
